@@ -33,7 +33,7 @@ app.use(
 app.use(express.static("public"));
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI + "/acciojob")
   .then(() => {
     console.log("Mongodb connected");
   })
